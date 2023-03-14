@@ -42,6 +42,14 @@ const availableProducts = products.map((product, index) => ({
   count: index + 1,
 }));
 
+export type ProductType = {
+  id: string;
+  title: string;
+  description: string;
+  price: number;
+  count: number;
+};
+
 export const product = {
   getProducts: () => Promise.resolve(availableProducts),
   getProductById: (id: string) => {

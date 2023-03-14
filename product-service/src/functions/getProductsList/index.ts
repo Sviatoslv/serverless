@@ -10,6 +10,12 @@ export default {
         cors: {
           origin: "*",
         },
+        responseData: {
+          200: {
+            description: "Products",
+          },
+          502: "server error",
+        },
       },
     },
   ],
